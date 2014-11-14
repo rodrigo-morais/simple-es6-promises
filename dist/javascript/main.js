@@ -6,10 +6,11 @@ define(["exports", "javascript/promise"], function (exports, _javascriptPromise)
 
   var main = (function () {
     var _run = function (number) {
-      promiseFunc.wait(number).then(function (number) {
-        console.log(number);
-      }).catch(function (number) {
-        console.log(number);
+      promiseFunc.wait(number).then(function (success) {
+        console.log(success);
+        _run(number + 1);
+      }).catch(function (error) {
+        console.log(error);
       });
     };
 
@@ -20,7 +21,4 @@ define(["exports", "javascript/promise"], function (exports, _javascriptPromise)
 
   //success
   main.run(1);
-
-  //error
-  main.run(2);
 });

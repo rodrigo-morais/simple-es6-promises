@@ -2,11 +2,12 @@
 
 let main = (() => {
     let _run = (number) => {
-        promiseFunc.wait(number).then((number) => {
-            console.log(number);
+        promiseFunc.wait(number).then((success) => {
+            console.log(success);
+            _run(number + 1);
         })
-        .catch((number) => {
-            console.log(number);
+        .catch((error) => {
+            console.log(error);
         });
     };
 
@@ -17,6 +18,3 @@ let main = (() => {
 
 //success
 main.run(1);
-
-//error
-main.run(2);

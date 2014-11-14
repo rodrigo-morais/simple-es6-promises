@@ -2,12 +2,15 @@
     let _wait = (number) => {
         return new Promise((resolve, reject) => {
 
-            if (1 == number) {
-                resolve("Stuff worked!");
-            }
-            else {
-                reject(Error("It broke"));
-            }
+            setTimeout(() => {
+                if (number < 10) {
+                    resolve('Number ' + number + ' is Success!!!!');
+                }
+                else {
+                    reject(Error('Number ' + number + ' is Error!!!'));
+                }
+            }, 1000);
+            
         });
     };
 

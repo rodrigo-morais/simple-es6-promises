@@ -1,0 +1,23 @@
+{
+  "name": "simple-es6-promises",
+  "version": "0.0.1",
+  "description": "Test promises standard of ES6.",
+  "main": "index.html",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-6to5": "^1.0.1",
+    "grunt-contrib-copy": "^0.7.0",
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodrigo-morais/web-worker-indexeddb-es6.git"
+  },
+  "author": "Rodrigo Morais",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrigo-morais/web-worker-indexeddb-es6/issues"
+  },
+  "homepage": "https://github.com/rodrigo-morais/web-worker-indexeddb-es6"
+}
